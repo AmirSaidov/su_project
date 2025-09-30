@@ -11,20 +11,20 @@
 <body>
     <!-- Верхняя панель -->
     <header>
-        <div class="header-left">
-            <img src="./img/logo.png" alt="Logo" class="logo">
-        </div>
-        <div class="header-center">
-            <input type="text" class="search-input" placeholder="Поиск товаров...">
-        </div>
-        <div class="header-right">
-            <a href="#" class="icon-link" title="Профиль">
-                <img src="./img/Profile.png" alt="Профиль" class="icon">
-            </a>
-            <a href="#" class="icon-link" title="Корзина">
-                <img src="./img/cart-icon.png" alt="Корзина" class="icon">
-            </a>
-        </div>
+        <nav class="nav-bar">
+            <div class="header-left">Bekbolot</div>
+            <div class="header-center">
+                <input type="text" class="search-input" placeholder="Поиск товаров...">
+            </div>
+            <div class="header-right">
+                <a href="#" class="icon-link" title="Профиль">
+                    <img src="./img/Profile.png" alt="Профиль" class="icon">
+                </a>
+                <a href="#" class="icon-link" title="Корзина">
+                    <img src="./img/cart-icon.png" alt="Корзина" class="icon">
+                </a>
+            </div>
+        </nav>
     </header>
     <!-- Меню категорий -->
     <nav class="main-nav">
@@ -35,112 +35,141 @@
         <a href="tel:+996 555 190 509">Контакты</a>
     </nav>
     <main>
-        <!-- Баннер
-        <section class="banner">
-            <div class="banner-content">
-                <h1>Онлайн магазин товаров</h1>
-                <p>Быстрая доставка, лучшие цены!</p>
-                <button class="shop-btn">Перейти в каталог</button>
+        <!-- Баннеры -->
+        <section class="banner-group">
+            <div class="banner-item">
+                <h2 style="font-size: 40px;">до -80% СКИДКИ</h2>
             </div>
-        </section> -->
+            <div class="banner-item2">
+                <h2 style="font-size: 30px;">качественные <br> локальные бренды</h2>
+                <p>на Мой Магазин</p>
+            </div>
+            <div class="banner-item3">
+                <h2 style="font-size: 40px; font-weight: 700;color: #057ec1;">УЮТНЫЕ <br> СКИДКИ</h2>
+            </div>
+        </section>
         <!-- Популярные товары -->
         <section class="products">
-            <h2>Популярные товары</h2>
+            <h2 style="font-size: 30px;">Популярные товары</h2>
             <div class="product-list hidden my-element">
                 <!-- Карточки товаров для примера -->
                 <div class="product-card hidden my-element">
                     <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
                     <div class="product-info">
+                        <div class="discount-badge">-56%</div>
                         <p class="product-title hidden my-element">Asus TUF gaming F15</p>
-                        <p class="product-price hidden my-element">$1099.99</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/msiTitan.png" alt="Товар 2" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">MSI titan 18 hx</p>
-                        <p class="product-price hidden my-element">$5199.99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/ROG.png" alt="Товар 3" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">ROG zephyrus g16</p>
-                        <p class="product-price hidden my-element">$1 589,99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/ROG.png" alt="Товар 3" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">ROG zephyrus g16</p>
-                        <p class="product-price hidden my-element">$1 589,99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/ROG.png" alt="Товар 3" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">ROG zephyrus g16</p>
-                        <p class="product-price hidden my-element">$1 589,99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/ROG.png" alt="Товар 3" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">ROG zephyrus g16</p>
-                        <p class="product-price hidden my-element">$1 589,99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/ROG.png" alt="Товар 3" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">ROG zephyrus g16</p>
-                        <p class="product-price hidden my-element">$1 589,99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/ROG.png" alt="Товар 3" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">ROG zephyrus g16</p>
-                        <p class="product-price hidden my-element">$1 589,99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/ROG.png" alt="Товар 3" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">ROG zephyrus g16</p>
-                        <p class="product-price hidden my-element">$1 589,99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/ROG.png" alt="Товар 3" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">ROG zephyrus g16</p>
-                        <p class="product-price hidden my-element">$1 589,99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/ROG.png" alt="Товар 3" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">ROG zephyrus g16</p>
-                        <p class="product-price hidden my-element">$1 589,99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
                 <div class="product-card hidden my-element">
-                    <img src="./img/ROG.png" alt="Товар 3" class="hidden my-element">
-                    <div class="product-info hidden my-element">
-                        <p class="product-title hidden my-element">ROG zephyrus g16</p>
-                        <p class="product-price hidden my-element">$1 589,99</p>
+                    <img src="./img/tuf15.png" alt="Товар 1" class="hidden my-element">
+                    <div class="product-info">
+                        <div class="discount-badge">-56%</div>
+                        <p class="product-title hidden my-element">Asus TUF gaming F15</p>
+                        <span class="product-price hidden my-element">$1099.99</span>
+                        <span class="product-old-price">$1200</span>
                         <button class="add-cart-btn hidden my-element">В корзину</button>
                     </div>
                 </div>
@@ -149,15 +178,52 @@
     </main>
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Bek Shop. Все права защищены.</p>
-            <nav class="footer-nav">
-                <a href="#">О компании</a>
-                <a href="#">Контакты</a>
-                <a href="#">Политика конфиденциальности</a>
-            </nav>
+            <div class="footer-company">
+                <p style="font-weight: 600;font-size: 20;color: white;">О компании</p>
+                <nav class="footer-nav">
+                    <a href="#">О нас</a>
+                    <a href="#">Команда</a>
+                    <a href="#">Вакансии</a>
+                    <a href="#">Отзывы</a>
+                </nav>
+            </div>
+            <div class="footer-company">
+                <p style="font-weight: 600;font-size: 20;color: white;">Покупателям</p>
+                <nav class="footer-nav">
+                    <a href="#">Доставка</a>
+                    <a href="#">Оплата</a>
+                    <a href="#">Возврат</a>
+                    <a href="#">Гарантия</a>
+                </nav>
+            </div>
+            <div class="footer-company">
+                <p style="font-weight: 600;font-size: 20;color: white;">Сотрудничество</p>
+                <nav class="footer-nav">
+                    <a href="#">Стать продавцом</a>
+                    <a href="#">Партнерам</a>
+                    <a href="#">Реклама</a>
+                    <a href="#">API</a>
+                </nav>
+            </div>
+            <div class="footer-company">
+                <p style="font-weight: 600;font-size: 20;color: white;">Контакты</p>
+                <nav class="footer-nav">
+                    <a href="#">info@myshop.kg</a>
+                    <a href="#">+996 555 123 456</a>
+                    <a href="#">Бишкек, Кыргызстан</a>
+                    <a href="#">Интернет магазин</a>
+                </nav>
+            </div>
         </div>
+        <hr>
+        <p class="copywrite">&copy; 2025 Мой магазин. Все права защищены</p>
     </footer>
 </body>
 <script src="./func.js"></script>
 
 </html>
+<!-- <nav class="footer-nav">
+                <a href="#">О компании</a>
+                <a href="#">Контакты</a>
+                <a href="#">Политика конфиденциальности</a>
+            </nav> -->

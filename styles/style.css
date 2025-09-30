@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 body {
-    background: linear-gradient(135deg, #2f5091 0%, #0050d2 100%);
+    background: #e4e4e4;
     margin: 0;
     max-width: 100%;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -14,19 +16,29 @@ body::-webkit-scrollbar {
     width: 0;
 }
 
-header {
+.nav-bar {
     width: 100%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background: linear-gradient(45deg, #9500ff 0%, #cf0000 100%);
+    justify-content: space-between;
     padding: 8px 24px;
     min-height: 56px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #2f5091 0%, #0050d2 100%);
+    ;
 }
 
 .header-left {
     display: flex;
     align-items: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
 }
 
 .logo {
@@ -35,8 +47,8 @@ header {
 
 .header-center {
     display: flex;
-    justify-content: center;
-    width: 24%;
+    width: 100%;
+    max-width: 600px;
 }
 
 .search-input {
@@ -128,7 +140,7 @@ header {
     height: 300px;
     position: relative;
     width: 100%;
-    margin-top: 24px;
+    margin-top: 24px;f
     display: flex;
     align-items: center;
     justify-content: center;
@@ -184,10 +196,10 @@ header {
 
 main {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .products {
@@ -199,23 +211,38 @@ main {
 .products h2 {
     font-size: 22px;
     margin-bottom: 18px;
-    color: #ffffff;
     text-align: center;
 }
 
 .product-list {
-    display: flex;
     gap: 32px;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+.discount-badge {
+    left: 10px;
+    top: 10px;
+    position: absolute;
+    background: #2563eb;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .product-card {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 12px rgba(34, 34, 68, 0.07);
-    width: 220px;
+    width: 160px;
     padding: 16px;
+    height: fit-content;
+    width: fit-content;
     display: flex;
+    cursor: pointer;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s;
@@ -251,10 +278,19 @@ main {
     color: #4b6cb7;
 }
 
+.product-old-price {
+    font-size: 13px;
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 6px;
+    font-weight: 400;
+}
+
 .add-cart-btn {
-    background: #4b6cb7;
+    background: #2563eb;
     color: #fff;
     border: none;
+    margin: 10px;
     padding: 8px 18px;
     border-radius: 20px;
     font-size: 15px;
@@ -263,18 +299,17 @@ main {
 }
 
 .add-cart-btn:hover {
-    background: #182848;
+    background: #27498e;
 }
 
 footer {
-    text-align: center;
     padding: 16px 0;
-    background: #f7f7f7;
-    border-radius: 0;
     font-size: 16px;
+    background: #1e3faa;
     margin-top: auto;
     color: #222;
-    border-top: 1px solid #eaeaea;
+    text-align: center;
+    color: white;
 }
 
 .footer-content {
@@ -282,25 +317,37 @@ footer {
     margin: 0 auto;
     padding: 0 24px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 90px;
 }
 
 .footer-nav {
     margin-top: 8px;
     display: flex;
+    flex-direction: column;
     gap: 24px;
 }
 
 .footer-nav a {
-    color: #222;
+    color: rgb(223, 223, 223);
     text-decoration: none;
     font-size: 15px;
     transition: color 0.2s;
 }
 
+/* .footer-company {
+    margin-left: 80px;
+} */
 .footer-nav a:hover {
     color: #4b6cb7;
+}
+
+hr {
+    width: 1000px;
+    opacity: 0.3;
+    margin: 30px auto 0 auto;
 }
 
 /* --- Адаптив --- */
@@ -447,4 +494,63 @@ footer {
     .footer-nav a {
         font-size: 13px;
     }
+}
+
+.banner-group {
+    display: flex;
+    justify-content: space-around;
+    width: 1200%;
+    gap: 16px;
+    margin: 24px auto;
+    max-width: 1200px;
+    padding: 0 12px;
+}
+
+.banner-item {
+    width: 20%;
+    background: #d4e6fe;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(34, 34, 68, 0.1);
+    transition: transform 0.3s;
+
+}
+
+.banner-item2 {
+    flex: 1;
+    background: #72eafa;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(34, 34, 68, 0.1);
+    transition: transform 0.3s;
+}
+
+.banner-item3 {
+    width: 20%;
+    background: #9cddfd;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(34, 34, 68, 0.1);
+    transition: transform 0.3s;
+}
+
+.banner-item:hover,
+.banner-item2:hover,
+.banner-item3:hover {
+    transform: translateY(-4px);
+}
+
+.banner-item h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #0050d2;
+    margin-bottom: 8px;
+}
+
+.banner-item p {
+    font-size: 16px;
+    color: #222;
 }

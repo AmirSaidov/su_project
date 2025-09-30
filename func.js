@@ -11,7 +11,7 @@
       }
     });
   }, {
-    threshold: 0.3 // сколько % элемента должно быть видно (0–1)
+    threshold: 0.1 // сколько % элемента должно быть видно (0–1)
   });
 
   elements.forEach(el => observer.observe(el));
